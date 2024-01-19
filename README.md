@@ -3,7 +3,7 @@
     <img alt="logo" src="./logo" height="150" style="max-width: 100%;">
   </picture>
 </p>
-<h2 align="center">
+<h1 align="center">
     Open LLM Stack
 </h2>
 <br>
