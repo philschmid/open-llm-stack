@@ -1,0 +1,15 @@
+mongodb:
+  name: mongodb
+  replicas: 1
+  image: mongo:latest
+  secretName: mongodb-secret
+
+nextjs:
+  name: nextjs-app
+  replicas: 2
+  image: your-nextjs-image:latest
+
+fastapi:
+  name: fastapi-app
+  replicas: 2
+  image: your-fastapi-image:latest

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: hugging-chat
+description: A Helm chart for deploying the Hugging Chat application
+version: 1.0.0
+appVersion: 1.0.0

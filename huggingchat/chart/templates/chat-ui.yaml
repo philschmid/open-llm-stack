@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.nextjs.name }}
+spec:
+  replicas: {{ .Values.nextjs.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.nextjs.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.nextjs.name }}
+    spec:
+      containers:
+      - name: nextjs
+        image: {{ .Values.nextjs.image }}
+        env:
+          - name: MONGODB_URL
+            value: "mongodb://{{ .Values.mongodb.name }}:27017"
+          - name: FASTAPI_URL
+            value: "http://{{ .Values.fastapi.name }}:8000"
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.nextjs.name }}
+spec:
+  type: ClusterIP
+  ports:
+  - port: 3000
+    targetPort: 3000
+    protocol: TCP
+    name: http
+  selector:
+    app: {{ .Values.nextjs.name }}
