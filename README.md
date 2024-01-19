@@ -1,6 +1,12 @@
-# Open LLM Stack
-
-![Logo](./logo_128x128.png)
+<p align="center">
+  <picture>
+    <img alt="logo" src="./logo" height="150" style="max-width: 100%;">
+  </picture>
+</p>
+<h2 align="center">
+    Open LLM Stack
+</h2>
+<br>
 
 Welcome to the Open LLM Stack repository! This project is dedicated to help companies in building production-ready Generative AI applications, with a keen focus on infrastructure management. Open LLM Stacks are built using open technologies, like Hugging Face Text Generation Inference, MongoDB, HuggingChat, Langchain, vLLM, Open Search, and more. The repository includes examples of how to deploy popular use cases to different cloud providers or on-premise.
 Leveraging the power of open technologies like Hugging Face Text Generation Inference, MongoDB, HuggingChat, Langchain, vLLM, Open Search, and more, Open LLM Stack offers a robust and versatile foundation for your Generative AI needs.
